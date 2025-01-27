@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                <li><a href="personaje.html">Personaje Admirado</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Envíame un mensaje</h2>
+        <form action="#" method="post">
+            <label for="email">Correo Electrónico:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+            
+            <label for="comentario">Comentario/Mensaje:</label><br>
+            <textarea id="comentario" name="comentario" rows="5" required></textarea><br><br>
+            
+            <label for="clasificacion">Clasificación:</label><br>
+            <select id="clasificacion" name="clasificacion">
+                <option value="contratacion">Contratación</option>
+                <option value="pregunta">Pregunta</option>
+                <option value="otro">Otro</option>
+            </select><br><br>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mi Sitio Web</p>
+    </footer>
+</body>
+</html>
