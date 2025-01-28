@@ -4,35 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Biografía</title>
+    <!-- Agregar Bootstrap desde CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="estilos/styles.css"> <!-- Enlace a tu CSS personalizado (opcional) -->
 </head>
-<body>
-    <header>
-        <h1>Bienvenidos a Mi biografia</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                <li><a href="personaje.html">Personaje Admirado</a></li>
-            </ul>
-        </nav>
+<body class="bg-light">
+
+    <!-- Encabezado con Bootstrap -->
+    <header class="bg-primary text-white text-center p-3">
+        <h1>Bienvenidos a Mi Biografía</h1>
     </header>
-    <main>
-        <img src="perrito_formal.jpg" alt="Perrito formal" style="width:200px; display:block; margin: 0 auto;">
-        <h2>Sobre mí</h2>
-        <p>Hola, soy Jorge Daray Padilla Perez, un apasionado de la tecnología y la programacion. 
-            Me encanta crear soluciones innovadoras y aprender cosas nuevas cada día.</p>
-        <p>Actualmente, me dedico a Estudiar mi ultimo semestre de ingenieria en computacion y trabajar de vez en cuando</p>
-        <p>Student at Universidad de Guadalajara
-            Universidad de Guadalajara
-            Guadalajara, Jalisco, Mexico.</p>
-            <p>Trabajo de vez en cuando (independiente), junto con mi compañero solucionando problemas varios.</p>
-            <p>Entre ellos automatizar impresoras industriales y movimiento de estas mismas.</p>
-        <h2>Mis Credenciales: </h2>
-        <p><a href="https://www.credly.com/badges/7235dcda-061e-48f1-b243-44af353aadfb/linked_in_profile" target="_blank">docker_introduction IBM</a></p>
-        <p><a href="https://www.credly.com/badges/cac45714-f2da-47b4-a003-a8148d2ca13a/linked_in_profile" target="_blank">Python for data science IBM</a></p>
+
+    <!-- Barra de navegación con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Menú</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="personaje.html">Personaje Admirado</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal -->
+    <main class="container mt-4">
+        <div class="text-center">
+            <img src="perrito_formal.jpg" alt="Perrito formal" class="img-fluid rounded-circle shadow" style="width: 200px;">
+        </div>
+
+        <section class="mt-4">
+            <h2 class="text-primary">Sobre mí</h2>
+            <p class="lead">Hola, soy Jorge Daray Padilla Perez, un apasionado de la tecnología y la programación.</p>
+            <p>Me encanta crear soluciones innovadoras y aprender cosas nuevas cada día.</p>
+            <p>Actualmente, me dedico a estudiar mi último semestre de ingeniería en computación y trabajo de vez en cuando.</p>
+            <p>Trabajo junto con mi compañero en la automatización de impresoras industriales y movimiento de estas mismas.</p>
+        </section>
+
+        <!-- Lista con estilos de Bootstrap -->
+        <section class="mt-4">
+            <h2 class="text-primary">Mis Credenciales</h2>
+            <ul class="list-group">
+                <li class="list-group-item"><a href="https://www.credly.com/badges/7235dcda-061e-48f1-b243-44af353aadfb/linked_in_profile" target="_blank">Docker Introduction - IBM</a></li>
+                <li class="list-group-item"><a href="https://www.credly.com/badges/cac45714-f2da-47b4-a003-a8148d2ca13a/linked_in_profile" target="_blank">Python for Data Science - IBM</a></li>
+            </ul>
+        </section>
     </main>
-    <footer>
+
+    <!-- Pie de página -->
+    <footer class="bg-dark text-white text-center py-3 mt-5">
         <p>&copy; 2025 Mi Sitio Web</p>
     </footer>
+
+    <!-- Scripts de Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

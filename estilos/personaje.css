@@ -1,0 +1,22 @@
+body {
+    font-family: 'Georgia', serif;
+    background-color: #e6f7ff;
+    color: #333;
+    text-align: left;
+}
+
+h2 {
+    color: #0066cc;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+img {
+    float: right;
+    border-radius: 10px;
+    margin-left: 20px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
